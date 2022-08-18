@@ -1,5 +1,10 @@
 function makeLean() {
-    document.querySelector('#secondary').style.display = 'none';
+    document.querySelector('#contents').style.display = 'none';
 }
 
 setInterval(makeLean, 1);
+
+window.addEventListener('hashchange', function () {
+    console.log("stuff here")
+    setInterval(makeLean, 2000);
+});

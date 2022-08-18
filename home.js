@@ -3,3 +3,8 @@ function makeLean() {
 }
 
 setInterval(makeLean, 1);
+
+window.addEventListener('hashchange', function () {
+    console.log("stuff here")
+    setInterval(makeLean, 2000);
+});
